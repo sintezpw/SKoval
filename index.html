@@ -1,17 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Homework-1</title>
+		<title>Sedona</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
-
-		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Я сделал это!</h1>
-		<p>Я тут был!</p>
-
+		<header class="header">
+			<ul class="header-menu">
+				<li class="header-menu__item">
+					<a href="index.html" class="header-menu__link header-menu__link--active">Информация</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Фото и видео</a>
+				</li>
+				<li class="header-menu__item header-menu__item-logo">
+					<a href="index.html" class="header-menu__link header-menu__link-logo"></a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Карта штата</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="#" class="header-menu__link">Гостиницы</a>
+				</li>
+			</ul>
+		</header>
+		<main class="main">
+			<div class="promo">
+				<div class="promo__decor"></div>
+				<div class="promo__title">
+					<h1 class="promo-slogan__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+					<p class="promo__descr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</div>
+			</div>
+			<div class="features__promo">
+				<div class="features-promo__descr-img">
+					<h3 class="features-promo__title">Настоящий городок</h3>
+					<p class="features-promo__number">— №1 —</p>
+					<p class="features-promo__descr">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<div class="features-promo__image">
+					<img src="#" alt="">
+				</div>
+			</div>
+			<div class="features__text-icons">
+				<div class="features__wrapper-text features__icon-home">
+					<h3 class="features-description__title">Жилье</h3>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="features__wrapper-text features__icon-food">
+					<h3 class="features-description__title">Еда</h3>
+					<p>Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+				</div>
+				<div class="features__wrapper-text features__icon-souvenir">
+					<h3 class="features-description__title">Сувениры</h3>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+			<div class="features__promo">
+				<div class="features-promo__image">
+					<img src="#" alt="">
+				</div>
+				<div class="features-promo__descr-img">
+					<h3 class="features-promo__title">Там есть мост дьявола</h3>
+					<p class="features-promo__number">— №2 —</p>
+					<p class="features-promo__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+			</div>
+			<div class="features__descriptions features--bgr-gray">
+				<div class="features__description">
+					<h3 class="features-description__title">Небольшая площадь</h3>
+					<p class="features-description__number">— №3 —</p>
+					<p class="features-description__text">Все достопримечательности находятся очень близко</p>
+				</div>
+				<div class="features__description">
+					<h3 class="features-description__title">Красивая дорога</h3>
+					<p class="features-description__number">— №4 —</p>
+					<p class="features-description__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+				<div class="features__description">
+					<h3 class="features-description__title">Мало туристов</h3>
+					<p class="features-description__number">— №5 —</p>
+					<p class="features-description__text">Большинство едет в Гранд Каньон и толпится там</p>
+				</div>
+			</div>
+			<div class="search-hotel">
+				<h2 class="search-hotel__title">Заинтересовались?</h2>
+				<p class="search-hotel__descr">
+					Укажите предполагаемые даты поездки,
+					и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в Седоне
+				</p>
+				<a href="#" class="cearch-hotel__link">Поиск гостиницы в Седоне</a>
+				<form class="search-modal" action="#">
+					<div class="search-modal__wrapper">
+						<div class="search-modal__date">
+							<label class="search-modal__label" for="chk1">Дата заезда:</label>
+							<div class="search-modal__wrapper-input">
+								<input class="search-modal__input" type="text" id="chk1" value="31 декабря 2017">
+								<button class="search-modal__btn-kalendar"></button>
+							</div>
+						</div>
+						<div class="search-modal__date">
+							<label class="search-modal__label" for="chk2">Дата выезда:</label>
+							<div class="search-modal__wrapper-input">
+								<input class="search-modal__input" type="text" id="chk2" value="8 января 2018">
+								<button class="search-modal__btn-kalendar"></button>
+							</div>
+						</div>
+						<div class="search-modal__date-min">
+							<label for="chk3" class="search-modal__label">Взрослые:</label>
+							<div class="search-modal__wrapper-input">
+								<button class="search-modal__btn-minus"></button>
+								<input class="search-modal__input" type="text" id="chk3" value="2">
+								<button class="search-modal__btn-plus"></button>
+							</div>
+						</div>
+						<div class="search-modal__date-min">
+							<label for="chk4" class="search-modal__label">Дети:</label>
+							<div class="search-modal__wrapper-input">
+								<button class="search-modal__btn-minus"></button>
+								<input class="search-modal__input" type="text" id="chk4" value="0">
+								<button class="search-modal__btn-plus"></button>
+							</div>
+						</div>
+						<button class="search-modal__btn-search">Найти</button>
+					</div>
+				</form>
+				<div class="search-hotel__map" id="map"></div>
+			</div>
+		</main>
+		<footer class="footer footer--opacity">
+			<section class="footer__visitsedona">
+				<p class="footer__descr">#visitsedona</p>
+			</section>
+			<section class="footer__social">
+				<a href="https://twitter.com" class="footer-social__link footer-social__link--twitter"></a>
+				<a href="https://www.facebook.com/" class="footer-social__link footer-social__link--fb"></a>
+				<a href="http://www.youtube.com/" class="footer-social__link footer-social__link--youtube"></a>
+			</section>
+			<section class="footer__copyright">
+				<p class="footer-copyight__text">Website by</p>
+				<a href="#" class="footer-copyight__link"></a>
+			</section>
+		</footer>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
