@@ -1,0 +1,27 @@
+{
+	"name": "SKoval",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "pingy dev",
+		"export": "pingy export"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kovalserg/SKoval.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kovalserg/SKoval/issues"
+	},
+	"homepage": "https://github.com/kovalserg/SKoval#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"node-sass": "^4",
+		"@pingy/cli": "^0.10.3"
+	}
+}
