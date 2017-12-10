@@ -1,0 +1,26 @@
+
+body{
+    background-color: yellow ;
+    text-align: center ;
+}
+h1{
+    color: red;
+}
+.main-nav{
+    width: 100% ;
+    background-color: white ;
+    line-height: 60px;
+    font-size: 0 ;
+
+        &__item{
+            width: 33.3333333%;
+            display: inline-block ;
+            font-size: 20px ;
+        }
+
+        &__link{
+            color: black ;
+            padding: 8px ;
+            text-decoration: none ;
+        }
+}
