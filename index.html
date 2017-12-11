@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <title>Sedona</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -19,8 +20,8 @@
                       <a href="#" class="header-menu__link">Фото и видео</a>
                   </li>
                   <li class="header-menu__logo">
-                      <a href="index.html" class="header-menu__link header-menu__link-logo">
-                          <img src="#" alt="">
+                      <a href="index.html" class="header-menu__link-logo">
+                          <img src="img/logo.png" width="138" height="70" alt="logo">
                         </a>
                   </li>
                   <li class="header-menu__item">
@@ -34,12 +35,12 @@
           <main class="main">
               <div class="promo">
                   <div class="promo__decor"></div>
-                  <div class="promo__title">
-                      <h1 class="promo-slogan__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-                      <p class="promo__descr">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-                  </div>
               </div>
-              <div class="features__promo">
+              <div class="promo-descr">
+                <h1 class="promo-descr__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+                <p class="promo-descr__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+              </div>
+              <div class="features-promo">
                   <div class="features-promo__descr-img">
                       <h3 class="features-promo__title">Настоящий городок</h3>
                       <p class="features-promo__number">— №1 —</p>
@@ -50,20 +51,20 @@
                   </div>
               </div>
               <div class="features__text-icons">
-                  <div class="features__wrapper-text features__icon-home">
+                  <div class="features__wrapper-text features__icon--home">
                       <h3 class="features-description__title">Жилье</h3>
-                      <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                      <p class="features-description__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
-                  <div class="features__wrapper-text features__icon-food">
+                  <div class="features__wrapper-text features__icon--food">
                       <h3 class="features-description__title">Еда</h3>
-                      <p>Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
+                      <p class="features-description__text">Всегда заказывая фирменный бургер, Вы не разочаруетесь!</p>
                   </div>
-                  <div class="features__wrapper-text features__icon-souvenir">
+                  <div class="features__wrapper-text features__icon--souvenir">
                       <h3 class="features-description__title">Сувениры</h3>
-                      <p>Не только китайского, но и местного производства!</p>
+                      <p class="features-description__text">Не только китайского, но и местного производства!</p>
                   </div>
               </div>
-              <div class="features__promo">
+              <div class="features-promo">
                   <div class="features-promo__image">
                       <img src="#" alt="">
                   </div>
@@ -92,6 +93,7 @@
               </div>
               <div class="search-hotel">
                   <h2 class="search-hotel__title">Заинтересовались?</h2>
+                  <!-- В текст вставлены неразрывные прбелы,для центровки текста по макету -->
                   <p class="search-hotel__descr">
                       Укажите предполагаемые даты поездки,
                       и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения гостиниц в Седоне
@@ -100,14 +102,14 @@
 
                   <form class="search-modal" action="#">
                       <div class="search-modal__wrapper">
-                          <div class="search-modal__date">
+                          <div class="search-modal__date-max">
                               <label class="search-modal__label" for="chk1">Дата заезда:</label>
                               <div class="search-modal__wrapper-input">
                                   <input class="search-modal__input" type="text" id="chk1" value="31 декабря 2017">
                                   <button class="search-modal__btn-kalendar"></button>
                               </div>
                           </div>
-                          <div class="search-modal__date">
+                          <div class="search-modal__date-max">
                               <label class="search-modal__label" for="chk2">Дата выезда:</label>
                               <div class="search-modal__wrapper-input">
                                   <input class="search-modal__input" type="text" id="chk2" value="8 января 2018">
@@ -138,7 +140,7 @@
               </div>
           </main>
           <footer class="footer footer--opacity">
-              <section class="footer__visitsedona">
+              <section class="footer__text">
                   <p class="footer__descr">#visitsedona</p>
               </section>
               <section class="footer__social">
